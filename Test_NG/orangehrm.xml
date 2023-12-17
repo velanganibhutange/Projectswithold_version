@@ -1,0 +1,29 @@
+<suite name="OrangeHRM Test Suite"> 
+
+<test name="Admin Login Testcase with valid Credentials">
+	<parameter name="uid" value="Admin"></parameter>
+	<parameter name="pwd" value="Qedge123!@#"></parameter>
+	<classes>
+		<class name="orangehrm.testcases.AdminLoginTestwithValidInputs"></class>
+	</classes>
+</test>	
+<test name="Admin Login Testcase with Invalid Inputs">
+	<parameter name="uid" value="abc"></parameter>
+	<parameter name="pwd" value="xyz"></parameter>
+	<classes>
+		<class name="orangehrm.testcases.AdminLoginTestwithInvalidInputs"></class>
+	</classes>
+</test>
+
+<test name="Employee registration Test with valid data">
+	<parameter name = "fname" value = "john"></parameter>
+	<parameter name= "lname" value = "R"></parameter>
+	<classes>
+		<class name="orangehrm.testcases.EmployeeRegTest">
+		
+		</class>
+	</classes>
+	
+	
+</test>
+</suite>
